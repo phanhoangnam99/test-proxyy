@@ -3,5 +3,5 @@ function FindProxyForURL(url, host) {
 
 
   // Default proxy for all other requests
-  return "PROXY 192.168.208.228:10809";
+  return "HTTPS 192.168.208.228:10809";
 }
