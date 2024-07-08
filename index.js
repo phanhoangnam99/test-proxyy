@@ -5,7 +5,9 @@ const path = require("path");
 // Serve the PAC file
 app.get("/proxy.pac", (req, res) => {
   res.sendFile(path.join(__dirname, "proxy.pac"));
-console.log('ec')
+  res.send(path.join(__dirname, "proxy.pac"));
+  console.log(__dirname);
+  console.log("ec");
 });
 
 const port = 3000;
